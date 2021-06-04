@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.moodanalyze.MoodTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-04T07:24:51" hostname="DESKTOP-4QDC4A3" time="0.09">
+<testsuite name="com.moodanalyze.MoodTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-04T09:00:36" hostname="DESKTOP-4QDC4A3" time="0.01">
   <properties/>
-  <testcase name="givenNullMoodShouldReturnHappy" classname="com.moodanalyze.MoodTest" time="0.09"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[com.moodanalyze.MoodAnalysisException: Please Enter valid message
-	at com.moodanalyze.MoodAnalyzer.analyseMood(MoodAnalyzer.java:19)
-	at com.moodanalyze.MoodTest.givenNullMoodShouldReturnHappy(MoodTest.java:15)
+  <testcase name="givenNullMoodShouldReturnHappy" classname="com.moodanalyze.MoodTest" time="0.01">
+    <failure message="java.lang.AssertionError: expected:&lt;HAPPY&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;HAPPY&gt; but was:&lt;null&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.moodanalyze.MoodTest.givenNullMoodShouldReturnHappy(MoodTest.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,5 +55,8 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-]]></system-err>
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

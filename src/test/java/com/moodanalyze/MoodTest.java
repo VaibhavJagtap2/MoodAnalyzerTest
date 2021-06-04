@@ -13,11 +13,22 @@ public class MoodTest {
             ExpectedException exceptionRule = ExpectedException.none();
             exceptionRule.expect(MoodAnalysisException.class);
             mood = moodAnalyzer.analyseMood();
-            Assert.assertEquals("HAPPY",mood);
+
         }catch (MoodAnalysisException e){
-            e.printStackTrace();
+
         }
+        Assert.assertEquals("HAPPY",mood);
         }
 
+        @Test
+        public void givenNullMoodShouldThrowException(){
+            MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
+            try{
+                moodAnalyzer.analyseMood(null);
+
+            }catch (MoodAnalysisException e){
+                Assert.assertEquals("Enter valid message",e.getMessage());
+            }
+        }
     }
 

@@ -5,18 +5,18 @@ public class MoodAnalyzer {
     public MoodAnalyzer(String message){
         this.message = message;
     }
-    public String analyseMood(String message) throws MoodAnalysisException{
+    public String analyseMood(String message) throws MoodAnalysisException {
         this.message = message;
         return analyseMood();
     }
-    public String analyseMood() throws MoodAnalysisException{
-        try{
+    public String analyseMood() throws MoodAnalysisException {
+        try {
             if (message.contains("Sad"))
                 return "SAD";
             else
                 return "HAPPY";
-        }catch (NullPointerException e){
-            throw new MoodAnalysisException("Please Enter valid message");
+        } catch (NullPointerException e) {
+            throw new MoodAnalysisException("Please enter valid message");
         }
     }
 }
