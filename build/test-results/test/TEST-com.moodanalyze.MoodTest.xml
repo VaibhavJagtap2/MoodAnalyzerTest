@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.moodanalyze.MoodTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-04T09:25:12" hostname="DESKTOP-4QDC4A3" time="0.013">
+<testsuite name="com.moodanalyze.MoodTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2021-06-04T09:45:12" hostname="DESKTOP-4QDC4A3" time="0.014">
   <properties/>
-  <testcase name="givenNullMoodShouldReturnHappy" classname="com.moodanalyze.MoodTest" time="0.013">
+  <testcase name="givenNullMoodShouldThrowException" classname="com.moodanalyze.MoodTest" time="0.005"/>
+  <testcase name="givenNullMoodShouldReturnHappy" classname="com.moodanalyze.MoodTest" time="0.009">
     <failure message="java.lang.AssertionError: expected:&lt;HAPPY&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;HAPPY&gt; but was:&lt;null&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

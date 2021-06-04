@@ -1,6 +1,5 @@
-com/moodanalyze/MoodAnalyzer.java
- com.moodanalyze.MoodAnalyzer
 com/moodanalyze/MoodAnalysisException.java
- com.moodanalyze.ExceptionType
  com.moodanalyze.MoodAnalysisException
  com.moodanalyze.MoodAnalysisException$ExceptionType
+com/moodanalyze/MoodAnalyzer.java
+ com.moodanalyze.MoodAnalyzer

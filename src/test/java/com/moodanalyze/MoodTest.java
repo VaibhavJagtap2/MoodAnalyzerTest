@@ -6,7 +6,7 @@ import org.junit.rules.ExpectedException;
 
 public class MoodTest {
     @Test
-    public void givenNullMoodShouldReturnHappy(){
+    public void givenNullMoodShouldReturnHappy() {
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
         String mood = null;
         try{
@@ -21,7 +21,7 @@ public class MoodTest {
         }
 
         @Test
-        public void givenNullMoodShouldThrowException(){
+        public void givenNullMoodShouldThrowException() {
             MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
             try{
                 moodAnalyzer.analyseMood(null);
