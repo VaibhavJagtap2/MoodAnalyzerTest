@@ -1,8 +1,22 @@
 package com.moodanalyze;
 
 public class MoodAnalyzer {
-
-    public static void main(String[] args) {
-        System.out.println("Welcome to the MoodAnalyzer Test");
+    private String message;
+    public MoodAnalyzer(String message){
+        this.message = message;
+    }
+    public String analyseMood(String message) throws MoodAnalysisException{
+        this.message = message;
+        return analyseMood();
+    }
+    public String analyseMood() throws MoodAnalysisException{
+        try{
+            if (message.contains("Sad"))
+                return "SAD";
+            else
+                return "HAPPY";
+        }catch (NullPointerException e){
+            throw new MoodAnalysisException("Please Enter valid message");
+        }
     }
 }
